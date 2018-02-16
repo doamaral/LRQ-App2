@@ -9,16 +9,18 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-inverse">
-      <%= link_to "My blog", root_path, class: 'navbar-brand'%>
-      <div class="container">
-        <p class="navbar-text navbar-right">
-          <% if user_signed_in? %>
-            <%= link_to 'New Post', new_post_path %>
-          <%else%>
-            <%= link_to 'Admin login', new_user_session_path %>
-          <%end%>
-        </p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <%= link_to "My Blog", root_path, class: 'navbar-brand'%>
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <% if user_signed_in? %>
+              <%= link_to 'New Post', new_post_path, class: 'nav-link' %>
+            <%else%>
+              <%= link_to 'Admin login', new_user_session_path, class: 'nav-link' %>
+            <%end%>
+          </li>
+        </ul>
       </div>
     </nav>
     <div class="col-md-10 col-md-offset-1">
