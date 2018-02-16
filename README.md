@@ -1,24 +1,10 @@
 # README
+Essa aplicação de Blog segue o tutorial do curso do Udemy: Learn Rails: Quickly Code, Style and Launch 4 Web Apps
+https://www.udemy.com/learn-rails/learn/v4/overview
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Algumas coisas que tem nesse projeto:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Problema com Bcrypt solucionado só adicionando a Gem no Gemfile
+* Styling with Bootstrap Template (https://bootswatch.com/simplex/)
+* Devise
+* Social Share (comming soon)
