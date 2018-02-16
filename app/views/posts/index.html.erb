@@ -3,10 +3,3 @@
 <% @posts.each do |post| %>
   <h1><%= link_to post.title, post %></h1>
 <% end %>
-
-<br>
-<% if user_signed_in? %>
-  <%= link_to 'New Post', new_post_path %>
-<%else%>
-  <%= link_to 'Admin login', new_user_session_path %>
-<%end%>
