@@ -34,6 +34,8 @@ gem 'devise'
 
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 
+gem 'social-share-button'
+
 group :production do
   # Use postgresql as the database for Active Record
   gem 'pg'
